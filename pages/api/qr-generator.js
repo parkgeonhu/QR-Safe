@@ -21,8 +21,11 @@ export default (req, res) => {
       res.statusCode = 200
       res.end("<!DOCTYPE html/><html><head><title>node-qrcode</title></head><body><img src='" + url + "'/></body></html>")
     })
-  
+  }
 
+  else{
+    res.statusCode = 200
+    res.end("잘못된 접근입니다.")
   }
 
 
